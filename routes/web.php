@@ -6,8 +6,9 @@ use PhpParser\Node\Stmt\Return_;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TransactionController;
 use App\Http\Controllers\MiningController;
-
+use App\Http\Controllers\TicketController;
 use App\Http\Controllers\WithdrawController;
+use PHPUnit\Framework\Attributes\Ticket;
 
 Route::get('/', function () {
     return Inertia::render('welcome');
@@ -31,9 +32,10 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/help', function () {
         return inertia('dashboard/help');
     })->name('help');
-    Route::get('submit-ticket', function () {
-        return inertia('dashboard/ticket_form');
-    })->name('submit_ticket');
+
+    Route::get('/submit-ticket',[TicketController::class,'create'])->name('submit_ticket');
+    Route::post('/submit-ticket',[TicketController::class,'store'])->name('submit_ticket.post');
+
     Route::get('/faq', function () {
         return inertia('dashboard/faq');
     })->name('faq');
