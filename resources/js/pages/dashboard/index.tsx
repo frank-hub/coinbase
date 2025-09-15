@@ -131,11 +131,10 @@ const Dashboard: React.FC<DashboardProps> = ({first_name, last_name}) => {
         <div className="px-4 py-3 flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-yellow-500 rounded flex items-center justify-center">
-              <span className="text-gray-900 font-bold text-xs">Z</span>
+                <Home className="w-6 h-6 text-white" />
             </div>
             <div>
-              <h1 className="text-orange-500 font-bold text-lg">zibolijax</h1>
-              <p className="text-gray-400 text-xs">CM#6539Tra-Pro</p>
+              <h1 className="text-orange-500 font-bold text-lg">CoinMiner</h1>
             </div>
           </div>
           <div className="flex items-center space-x-4">

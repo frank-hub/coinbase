@@ -13,8 +13,7 @@ const ActiveEngine = () => {
             <Home className="w-5 h-5 text-white" />
           </div>
           <div>
-            <h1 className="text-xl font-bold text-orange-500">wovek</h1>
-            <p className="text-xs text-gray-400">CM#8606Tra-Pro</p>
+            <h1 className="text-xl font-bold text-orange-500">CoinMiner</h1>
           </div>
         </div>
         <div className="flex items-center space-x-3">

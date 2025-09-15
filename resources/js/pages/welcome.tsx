@@ -43,7 +43,7 @@ const LandingPage: React.FC = () => {
           <div className="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center">
             <span className="text-white font-bold text-lg">⚡</span>
           </div>
-          <span className="text-white text-xl font-bold">CryptoMine Pro</span>
+          <span className="text-white text-xl font-bold">CoinMiner</span>
         </div>
 
         {/* Desktop Menu */}
@@ -250,7 +250,7 @@ const LandingPage: React.FC = () => {
         </div>
       </div>
 
-      {/* Why Choose CryptoMine Pro Section */}
+      {/* Why Choose CoinMiner Section */}
       <div className="px-6 py-24 max-w-7xl mx-auto">
         <motion.div
           className="text-center mb-16"
@@ -260,7 +260,7 @@ const LandingPage: React.FC = () => {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-            Why Choose CryptoMine Pro?
+            Why Choose CoinMiner ?
           </h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
             Experience the future of cryptocurrency mining with our advanced platform
@@ -491,7 +491,7 @@ const LandingPage: React.FC = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
-                Join thousands of users who are already earning daily profits with CryptoMine Pro
+                Join thousands of users who are already earning daily profits with CoinMiner
               </motion.p>
               <motion.button
                 className="bg-white text-orange-500 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-colors shadow-xl"
@@ -516,11 +516,11 @@ const LandingPage: React.FC = () => {
             <div className="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">⚡</span>
             </div>
-            <span className="text-white text-xl font-bold">CryptoMine Pro</span>
+            <span className="text-white text-xl font-bold">CoinMiner</span>
           </div>
 
           <p className="text-gray-400 text-sm">
-            © 2025 CryptoMine Pro. All rights reserved.
+            © 2025 CoinMiner. All rights reserved.
           </p>
         </div>
       </footer>

@@ -13,10 +13,10 @@ interface SuccessStory {
 const EarningsPage: React.FC = () => {
     const {
         totalDeposits,
-        withdraws,
+        totalWithdraws,
     } = usePage().props as unknown as {
         totalDeposits: number;
-        withdraws: number;
+        totalWithdraws: number;
     };
 
   const successStories: SuccessStory[] = [
@@ -57,11 +57,10 @@ const EarningsPage: React.FC = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 bg-orange-500 rounded flex items-center justify-center">
-              <span className="text-white font-bold text-sm">A</span>
+              <Home className="w-5 h-5 text-white" />
             </div>
             <div>
-              <h1 className="text-orange-400 font-bold">Apple</h1>
-              <p className="text-slate-400 text-xs">CM#8004Tra-Pro</p>
+              <h1 className="text-orange-400 font-bold">CoinMiner</h1>
             </div>
           </div>
           <div className="text-right">
@@ -87,7 +86,7 @@ const EarningsPage: React.FC = () => {
             </div>
             <div className="bg-slate-800 rounded-lg p-4">
               <div className="text-slate-400 text-sm mb-2">Total Withdrawn</div>
-              <div className="text-orange-400 text-2xl font-bold">KES {withdraws}</div>
+              <div className="text-orange-400 text-2xl font-bold">KES {totalWithdraws}</div>
             </div>
           </div>
 

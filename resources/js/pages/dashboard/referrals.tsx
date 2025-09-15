@@ -14,11 +14,10 @@ const ReferralPage: React.FC = () => {
       <div className="bg-slate-800 border-b border-slate-700 px-4 py-3">
         <div className="flex items-center">
           <div className="w-10 h-10 bg-orange-500 rounded flex items-center justify-center mr-3">
-            <Zap className="w-6 h-6 text-white" />
+            <Home className="w-6 h-6 text-white" />
           </div>
           <div>
-            <div className="text-orange-400 text-xs font-medium">CRYPTO</div>
-            <div className="text-orange-400 text-xs font-medium">MINE PRO</div>
+            <div className="text-orange-400 text-lg font-medium">CoinMiner</div>
           </div>
         </div>
       </div>
