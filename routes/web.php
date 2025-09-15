@@ -34,7 +34,7 @@ Route::middleware(['auth'])->group(function () {
     })->name('help');
 
     Route::get('/submit-ticket',[TicketController::class,'create'])->name('submit_ticket');
-    Route::post('/submit-ticket',[TicketController::class,'store'])->name('submit_ticket.post');
+    Route::post('/support/tickets',[TicketController::class,'store'])->name('submit_ticket.post');
 
     Route::get('/faq', function () {
         return inertia('dashboard/faq');
