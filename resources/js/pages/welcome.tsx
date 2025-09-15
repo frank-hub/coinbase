@@ -145,6 +145,7 @@ const LandingPage: React.FC = () => {
 
             <div className="flex space-x-4">
               <motion.button
+              onClick={() => window.location.href = '/register'}
                 className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -494,6 +495,7 @@ const LandingPage: React.FC = () => {
                 Join thousands of users who are already earning daily profits with CoinMiner
               </motion.p>
               <motion.button
+              onClick={() => window.location.href = '/register'}
                 className="bg-white text-orange-500 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-colors shadow-xl"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.98 }}

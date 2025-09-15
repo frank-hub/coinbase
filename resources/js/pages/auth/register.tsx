@@ -36,7 +36,7 @@ export default function Register() {
         e.preventDefault();
         post(('register'), {
             onFinish: () => reset('password', 'password_confirmation'),
-            
+
         });
     };
 
@@ -48,7 +48,7 @@ export default function Register() {
                 <div className="w-full max-width-[500px] animate-fadeIn">
                     {/* Back Button */}
                     <Link
-                        href={('welcome')}
+                        href={('/')}
                         className="inline-flex items-center gap-2 text-gray-400 hover:text-orange-500 transition-colors mb-8"
                     >
                         <ArrowLeft className="w-5 h-5" />
