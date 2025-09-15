@@ -19,6 +19,7 @@ class DashboardController extends Controller
         $totalWithdraws = intval(Withdraw::where('user_id', $user->id)
                                 // ->where('status', 'completed')
                                ->sum('amount'));
+        
         $availableBalance = $totalDeposits - $totalWithdraws;
 
         return Inertia::render('dashboard/index', [
